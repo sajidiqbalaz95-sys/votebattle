@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoteBattle - Results</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">VoteBattle</div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Result Header -->
+    <section class="result-header">
+      <h1>Competition Ended</h1>
+      <p class="winner-text">Winner is <span id="winnerName">Ali Khan</span> 🎉</p>
+    </section>
+
+    <!-- Final Score Cards -->
+    <section class="final-scores">
+
+      <!-- Winner Card -->
+      <div class="result-card winner">
+        <div class="badge">WINNER</div>
+        <div class="photo-box">
+          <img src="https://via.placeholder.com/300x300?text=Winner" alt="Winner" class="candidate-photo">
+        </div>
+        <h2 class="candidate-name">Ali Khan</h2>
+        <p class="final-votes">128 Votes</p>
+      </div>
+
+      <!-- Loser Card -->
+      <div class="result-card">
+        <div class="photo-box">
+          <img src="https://via.placeholder.com/300x300?text=Player+2" alt="Player 2" class="candidate-photo">
+        </div>
+        <h2 class="candidate-name">Sara Ahmed</h2>
+        <p class="final-votes">95 Votes</p>
+      </div>
+
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-box">
+      <h3>Voting Statistics</h3>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <p class="stat-number">128</p>
+          <p class="stat-label">Total Votes</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-number">82</p>
+          <p class="stat-label">From Invite Link</p>
+        </div>
+        <div class="stat-item">
+          <p class="stat-number">46</p>
+          <p class="stat-label">From Direct Link</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Action Buttons -->
+    <section class="result-actions">
+      <button class="btn-download">Download Winner Image</button>
+      <button class="btn-share">Share Result</button>
+      <button class="btn-new">Start New Competition</button>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 VoteBattle • Fair Voting Platform</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Script yahan hona chahiye -->
+  <script src="script.js"></script>
+</body>
+</html>
