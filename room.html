@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoteBattle - Competition Room</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">VoteBattle</div>
+  </header>
+
+  <!-- Main -->
+  <main class="main">
+
+    <!-- Room Info -->
+    <section class="room-info">
+      <h1>Competition Room</h1>
+      <p class="timer">Time Left: <span id="timeLeft">23:59:45</span></p>
+      <p class="room-id">Room ID: <span>#VB-2847</span></p>
+    </section>
+
+    <!-- Candidates -->
+    <section class="candidates">
+
+      <!-- Candidate 1 -->
+      <div class="candidate-card">
+        <div class="photo-box">
+          <img src="https://via.placeholder.com/300x300?text=Player+1" alt="Player 1" class="candidate-photo">
+        </div>
+        <h2 class="candidate-name">Ali Khan</h2>
+        <p class="vote-count"><span id="votes1">128</span> Votes</p>
+        <button class="btn-vote" data-candidate="1">Vote</button>
+      </div>
+
+      <!-- VS -->
+      <div class="vs-big">VS</div>
+
+      <!-- Candidate 2 -->
+      <div class="candidate-card">
+        <div class="photo-box">
+          <img src="https://via.placeholder.com/300x300?text=Player+2" alt="Player 2" class="candidate-photo">
+        </div>
+        <h2 class="candidate-name">Sara Ahmed</h2>
+        <p class="vote-count"><span id="votes2">95</span> Votes</p>
+        <button class="btn-vote" data-candidate="2">Vote</button>
+      </div>
+
+    </section>
+
+    <!-- Share Box -->
+    <section class="share-box">
+      <p>Share this room to get more votes:</p>
+      <div class="share-link">
+        <input type="text" value="https://votebattle.com/room/VB-2847" readonly id="shareLink">
+        <button class="btn-copy" onclick="copyLink()">Copy Link</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 VoteBattle • Fair Voting Platform</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <!-- Script yahan hona chahiye -->
+  <script src="script.js"></script>
+</body>
+</html>
