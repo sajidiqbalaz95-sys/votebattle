@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VoteBattle - Create Competition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="logo">VoteBattle</div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="main">
+
+    <section class="hero">
+      <h1>Create Your Competition Room</h1>
+      <p class="subtitle">2 people • 24 hours voting • No account needed</p>
+    </section>
+
+    <!-- Create Room Form -->
+    <section class="form-section">
+      <form id="createRoomForm" class="create-form">
+
+        <!-- Player 1 -->
+        <div class="player-box">
+          <h2>You</h2>
+
+          <div class="form-group">
+            <label for="player1Name">Your Name</label>
+            <input type="text" id="player1Name" name="player1Name" placeholder="Enter your name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="player1Photo">Your Photo</label>
+            <input type="file" id="player1Photo" name="player1Photo" accept="image/*" required>
+          </div>
+        </div>
+
+        <!-- VS -->
+        <div class="vs">VS</div>
+
+        <!-- Player 2 -->
+        <div class="player-box">
+          <h2>Opponent</h2>
+
+          <div class="form-group">
+            <label for="player2Name">Opponent Name</label>
+            <input type="text" id="player2Name" name="player2Name" placeholder="Enter opponent name" required>
+          </div>
+
+          <div class="form-group">
+            <label for="player2Photo">Opponent Photo</label>
+            <input type="file" id="player2Photo" name="player2Photo" accept="image/*" required>
+          </div>
+        </div>
+
+        <!-- Submit Button -->
+        <button type="submit" class="btn-create">Create Room</button>
+
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2026 VoteBattle • Fair Voting Platform</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
